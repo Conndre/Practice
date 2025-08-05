@@ -1,0 +1,5 @@
+
+Question: How do you characterize the term "audio aura"?
+
+Answer: maybe it could be defined as a listener's unique musical  preferences,
+        by analyzing several audio features such as danceability, energy, valence, tempo, and speechiness.

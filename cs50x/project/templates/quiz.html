@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Quiz</h2>
+    <form action="{{ url_for('quiz') }}" method="post">
+        <div class="form-group">
+            <label for="num_questions">Choose number of questions:</label>
+            <input type="number" id="num_questions" name="num_questions" class="form-control" min="1" max="60" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Start Quiz</button>
+    </form>
+</div>
+
+<!-- Flash Messages -->
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="alert alert-danger">
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+{% endwith %}
+{% endblock %}

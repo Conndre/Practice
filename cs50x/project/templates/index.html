@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to Microbiome Tips and Quizzes</h1>
+    <p>Your resource for understanding and maintaining a healthy microbiome.</p>
+    <a href="{{ url_for('register') }}" class="btn btn-primary">Get Started</a>
+    <a href="{{ url_for('login') }}" class="btn btn-secondary">Login</a>
+</div>
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="alert alert-danger">
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+{% endwith %}
+{% endblock %}

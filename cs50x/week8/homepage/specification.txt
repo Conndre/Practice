@@ -1,0 +1,21 @@
+HTML Tags Used:
+1. <!DOCTYPE>
+2. <html>
+3. <head>
+4. <link>
+5. <script>
+6. <title>
+7. <body>
+8. <div>
+9. <h1>
+10. <ul>
+
+CSS Properties Used:
+1. background-color
+2. color
+3. font-size
+4. text-shadow
+5. margin
+
+Bootstrap Feature:
+Bootstrap classes are used to style buttons and the layout for a responsive design.

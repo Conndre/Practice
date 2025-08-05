@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+
+{% block title %}Quiz Results{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h2>Quiz Results</h2>
+    <p>Your score: {{ score }} out of {{ total }}</p>
+
+    <h3>Your Answers:</h3>
+    <ul>
+        {% for result in results %}
+            <li>
+                Question: {{ loop.index }} - {{ result.question }}:
+                <strong
+                    {% if result.user_answer != result.correct_answer %}
+                        style="color: red;"
+                    {% else %}
+                        style="color: green;"
+                    {% endif %}>
+                    Your Answer: {{ result.user_answer }}
+                </strong>
+                {% if result.user_answer != result.correct_answer %}
+                    <span class="text-danger">(Correct Answer: {{ result.correct_answer }})</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% if score == total %}
+        <p class="text-success">Excellent! You got all the answers right!</p>
+    {% elif score > total / 2 %}
+        <p class="text-info">Good job! You're doing well!</p>
+    {% else %}
+        <p style="color: darkblue; font-size: larger;">Keep practicing! You'll get better!</p>
+    {% endif %}
+
+    <a href="{{ url_for('quiz') }}" class="btn btn-primary">Take Another Quiz</a>
+</div>
+
+<!-- Flash Messages -->
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="alert alert-info">
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+{% endwith %}
+{% endblock %}

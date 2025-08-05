@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+    background-color: #FFB6C1; /* lightpink */
+    color: #333; /* Darker gray for better contrast */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #1976D2; /* Blue for headings */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger for main titles */
+}
+
+h2 {
+    font-size: 2rem; /* Medium for section titles */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #4A90E2; /* Soft blue */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #005BB5; /* Darker blue on hover */
+}
+
+.btn-success {
+    background-color: #8BC34A; /* Light green for success */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+
+.btn-success:hover {
+    background-color: #689F38; /* Darker green on hover */
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #E0E0E0; /* Light gray border */
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* List Styles */
+.list-group-item {
+    background-color: #FFFFFF; /* White background for list items */
+    border: 1px solid #FFEBEE; /* Light rose border */
+    padding: 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.list-group-item:hover {
+    background-color: #FFCDD2; /* Light hover effect */
+}
+
+/* Centering Elements */
+.text-center {
+    text-align: center;
+}
+
+/* Margins and Padding */
+.mt-4 {
+    margin-top: 2rem; /* Consistent spacing */
+}
+
+/* Container Styles */
+.container {
+    max-width: 700px; /* Limit width for better readability */
+    margin: auto; /* Center container */
+    padding: 25px; /* Padding around container */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #FFFFFF; /* White background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Daily Tips Section */
+.tips-section {
+    background-color: #C8E6C9; /* Light green background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 30px; /* More space above */
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.tips-section:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Spacing */
+.tips-title {
+    margin-bottom: 20px; /* Space between title and tips */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9em; /* Slightly smaller text on mobile */
+    }
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}

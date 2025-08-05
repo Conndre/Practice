@@ -1,0 +1,13 @@
+sort1 uses: Bubble sort
+
+How do you know?: because, bubble sort is best in ordered sequences.
+
+sort2 uses: Merge sort
+
+How do you know?: because on  reversed values is the fastest algorithm and
+it is is fast on average
+
+sort3 uses: selection sort
+
+How do you know?: because selection sort has: for sorted data  about the same time as
+for reversed or unsorted data. And it is is slow on average

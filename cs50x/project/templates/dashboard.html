@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Welcome, {{ user.username }}!</h1>
+    <a href="{{ url_for('profile') }}" class="btn btn-primary">Edit Profile</a>
+    <a href="{{ url_for('change_password') }}" class="btn btn-secondary">Change Password</a>
+    <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+    <a href="{{ url_for('quiz') }}" class="btn btn-info">Quiz</a>
+
+    <!-- Daily Tip Section -->
+    <div class="alert alert-success tips-section text-center mt-4" style="border-radius: 6px;">
+        <h2>Your Daily Tip</h2>
+        {{ daily_tip }}
+    </div>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-danger">
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endwith %}
+</div>
+{% endblock %}
+
