@@ -1,4 +1,3 @@
-
 # 📊 CS50 R – Ciencia de Datos y Estadística
 
 Este repositorio reúne los ejercicios que realicé durante el curso **CS50's Introduction to Data Science with R**. Incluye prácticas, notebooks y pequeños proyectos organizados por tema, cubriendo tanto estadística como programación en R aplicada.
@@ -57,3 +56,4 @@ CS50-R/
 ├── modelos/
 ├── datos/
 └── notebooks/
+
