@@ -1,0 +1,11 @@
+Package: microbiome
+Title: microbiome 
+Description: A package for simulating and analyzing bacterial counts in microbiome samples.
+Version: 1.0
+Authors@R: person("Constantina", "Dretakis", email = "conddre@gmail.com", role= ("aut"))
+License: MIT + file
+Video: https://youtu.be/qlzf1B-zUyA
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+
